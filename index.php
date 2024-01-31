@@ -1,4 +1,5 @@
 <?php
+include "db.php";
 session_start();
 
 // Check if the user is logged in
@@ -14,19 +15,22 @@ if (isset($_SESSION['username'])) {
 
 <head>
   <title>Checkers Game</title>
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <script src="js/script.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
   <header>
     <h1>
+      <img class="center-image" src="img/Fresno_State_Bulldogs.png" alt="Bulldogs Image">
       <?php echo $welcomeMessage; ?>
     </h1>
+  </header>
+
+  <main>
     <nav>
       <ul>
-        <li><a href="game.php">Play Game</a></li>
-        <li><a href="help.php">Help</a></li>
+        <li><a href="game.html">Play Game</a></li>
+        <li><a href="help.html">Help</a></li>
         <?php
         if (isset($_SESSION['username'])) {
           // If the user is logged in, display the sign-out button
@@ -34,21 +38,14 @@ if (isset($_SESSION['username'])) {
         } else {
           // If the user is not logged in, display the login and register buttons
           echo '<li><a href="login.html">Login</a></li>';
-          echo '<li><a href="signup.html">Register</a></li>';
+          echo '<li><a href="register.html">Register</a></li>';
         }
         ?>
         <li><a href="leaderboard.php">Leaderboard</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-  </header>
-
-  <main>
-    <!-- Main content here -->
   </main>
-
-  <footer>
-    <a href="contact.php">Contact</a>
-  </footer>
 </body>
 
 </html>

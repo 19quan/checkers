@@ -1,0 +1,67 @@
+body {
+  background-color: #13284c;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+img {
+  margin: 20px auto;
+  display: block;
+}
+
+#leaderboard {
+  margin: 20px auto; /* Center the leaderboard */
+  width: 40%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid white;
+}
+
+th {
+  padding: 8px;
+  text-align: center;
+}
+
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #b1102b;
+}
+
+a {
+  color: white; /* Set link color to white */
+  text-decoration: none; /* Remove underlines from links */
+}
+
+.homebutton {
+  text-align: center;
+}
+
+.homebutton a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid white;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 0 auto;
+}
+
+p {
+  text-align: center;
+  margin: 10px auto;
+}
+
+.homebutton a:hover {
+  background-color: #b1102b;
+}
